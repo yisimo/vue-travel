@@ -4,9 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 引入border.css解决不同移动端屏幕1像素显示的问题
-import './assets/styles/border.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 // 引入fastClick解决部分移动端click事件延迟300毫秒执行的问题

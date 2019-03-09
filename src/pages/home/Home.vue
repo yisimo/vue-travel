@@ -1,22 +1,20 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <home-header></home-header>
   </div>
 </template>
 
 <script>
+import HomeHeader from './components/Header'
+
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: 'Hello World'
-    }
+  components: {
+    HomeHeader
   }
 }
 </script>
 
 <style scoped>
-.hello {
-  color: red;
-}
+
 </style>
