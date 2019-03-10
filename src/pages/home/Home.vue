@@ -39,8 +39,8 @@ export default {
       axios.get('/api/index.json')
         .then(this.getHomeInfoSucc)
     },
+    // 处理首页数据
     getHomeInfoSucc (res) {
-      console.log(res)
       const result = res.data
       if (result.ret && result.data) {
         const data = result.data
@@ -53,6 +53,7 @@ export default {
     }
   },
   mounted () {
+    // 获取首页数据
     this.getHomeInfo()
   }
 }
